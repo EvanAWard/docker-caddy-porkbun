@@ -12,7 +12,7 @@ This is a custom [Caddy](https://hub.docker.com/_/caddy)-based image that adds t
 The image is availabe on [GitHub Packages](https://github.com/evanaward/docker-caddy-porkbun/pkgs/container/docker-caddy-porkbun). You can use the `latest` tag or a specific Caddy version:
 
 - `ghcr.io/evanaward/docker-caddy-porkbun:latest` (latest from GitHub)
-- `ghcr.io/evanaward/docker-caddy-porkbun:2.10.0` (Caddy `2.10.0` from GitHub)
+- `ghcr.io/evanaward/docker-caddy-porkbun:2.9.1` (Caddy `2.9.1` from GitHub)
 
 The following platforms are supported:
 
