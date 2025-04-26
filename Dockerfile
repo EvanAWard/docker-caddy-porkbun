@@ -10,10 +10,10 @@ RUN xcaddy build \
 FROM caddy:${CADDY_VERSION}-alpine
 
 # install additional packages
-RUN apk add --no-cache tzdata curl
+RUN apk add --no-cache tzdata
 
-LABEL org.opencontainers.image.vendor="erri120"
-LABEL org.opencontainers.image.documentation="https://github.com/erri120/docker-caddy-porkbun"
-LABEL org.opencontainers.image.source="https://github.com/erri120/docker-caddy-porkbun"
+LABEL org.opencontainers.image.vendor="evanaward"
+LABEL org.opencontainers.image.documentation="https://github.com/evanaward/docker-caddy-porkbun"
+LABEL org.opencontainers.image.source="https://github.com/evanaward/docker-caddy-porkbun"
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
