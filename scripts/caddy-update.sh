@@ -7,7 +7,7 @@
 # 4) extract the first line, which is the latest version (https://manpage.me/?q=head)
 getLatestVersion() {
     local result=$(
-        curl -s "https://hub.docker.com/v2/repositories/$1/tags?page_size=50" | \
+        curl -s "https://hub.docker.com/v2/namespaces/caddy/repositories/caddy/tags?page_size=50" | \
         jq -r '.results[] | select(.name | match("^\\d(\\.\\d(\\.\\d)?)?$")) | .name' | \
         sort -V -r | \
         head -n 1
